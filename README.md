@@ -1,6 +1,6 @@
 # Java prettier formatter
 
-A formatter for Java files that uses the Prettier formatter.
+A VSCode extension enabling *fast* format-on-save for Java sources using `prettier=^2.7` and `prettier-plugin-java=^1.6`.
 
 ## Installation
 
@@ -19,14 +19,11 @@ To set as default formatter for Java files:-
 * Open the Command Palette (ctrl+shift+p).
 * Select 'Preferences: Configure Language Specific Settings'.
 * Select 'Java'.
-* Add 
+* Add the following line under the `[java]` section:
 
 ```
-"editor.defaultFormatter": "mwpb.java-prettier-formatter"
+"editor.defaultFormatter": "hp.vscode-ext-prettier-java"
 ```
-
-into the `[java]` section.
-Then the formatter should be available with `Alt+Shift+f` on windows and `Ctrl+Shift+i1 on Linux.
 
 ## Configuration
 
@@ -42,8 +39,7 @@ Changes require restart to take effect.
 
 ## Acknowledgments
 
-This package completes the 'last yard' to use Prettier with Java files in VS Code in a standalone way.
-The hard work and credit is due to:-
+This plugin is based on [`mwpb.java-prettier-formatter`](https://github.com/mwpb/java-prettier-formatter). We updated the underlying tools, updated all dependencies to their latest compatible versions, updated the VSCode plugin module, and converted the project to TypeScript. Big thanks to them and and the projects below!
 
 * [Prettier](https://prettier.io/) - Formatter.
 * [Prettier plugin Java](https://github.com/jhipster/prettier-java/tree/master/packages/prettier-plugin-java) - Java specific formatting.

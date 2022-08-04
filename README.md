@@ -22,7 +22,7 @@ To set as default formatter for Java files:-
 * Add the following line under the `[java]` section:
 
 ```
-"editor.defaultFormatter": "hp.vscode-ext-prettier-java"
+"editor.defaultFormatter": "hyperproof.vscode-ext-prettier-java"
 ```
 
 ## Configuration

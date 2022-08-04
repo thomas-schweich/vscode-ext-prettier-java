@@ -1,9 +1,9 @@
 {
-  "publisher": "mwpb",
-  "name": "java-prettier-formatter",
-  "displayName": "Java prettier formatter",
-  "description": "Formats Java using the Prettier formatter.",
-  "version": "0.1.4",
+  "publisher": "hp",
+  "name": "vscode-ext-prettier-java",
+  "displayName": "[Hyperproof] Prettier for Java",
+  "description": "VSCode extension enabling fast format-on-save for Java sources using prettier-plugin-java.",
+  "version": "0.1.1",
   "engines": {
     "vscode": "^1.45.0"
   },
@@ -15,16 +15,15 @@
     "Java",
     "formatter"
   ],
-  "activationEvents": [
-    "onLanguage:java"
-  ],
-  "main": "./extension.js",
-  "preview": false,
+  "main": "./out/extension.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/thomas-schweich/vscode-ext-prettier-java"
   },
   "icon": "prettier-avatar-dark.png",
+  "activationEvents": [
+    "onLanguage:java"
+  ],
   "contributes": {
     "languages": [
       {
@@ -40,17 +39,21 @@
   },
   "license": "MIT",
   "scripts": {
-    "lint": "eslint .",
-    "pretest": "npm run lint",
-    "test": "node ./test/runTest.js"
+    "lint": "eslint . --ext .ts,.tsx",
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./"
   },
   "dependencies": {
-    "@types/vscode": "^1.69.1",
     "lodash": ">=4.17.19",
     "prettier": "^2.7.1",
     "prettier-plugin-java": "^1.6.2"
   },
   "devDependencies": {
-    "vscode-test": "^1.6.1"
+    "@types/node": "^16.11.7",
+		"@types/vscode": "^1.34.0",
+		"@typescript-eslint/eslint-plugin": "^5.30.0",
+		"@typescript-eslint/parser": "^5.30.0",
+		"eslint": "^8.13.0",
+		"typescript": "^4.7.2"
   }
 }

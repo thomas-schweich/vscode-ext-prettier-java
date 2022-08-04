@@ -22,7 +22,7 @@
   "preview": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/mwpb/java-prettier-formatter"
+    "url": "https://github.com/thomas-schweich/vscode-ext-prettier-java"
   },
   "icon": "prettier-avatar-dark.png",
   "contributes": {
@@ -44,12 +44,13 @@
     "pretest": "npm run lint",
     "test": "node ./test/runTest.js"
   },
-  "devDependencies": {
-    "vscode": "^1.1.37"
-  },
   "dependencies": {
-    "prettier": "^2.0.5",
-    "prettier-plugin-java": "^0.8.3",
-    "lodash": ">=4.17.19"
+    "@types/vscode": "^1.69.1",
+    "lodash": ">=4.17.19",
+    "prettier": "^2.7.1",
+    "prettier-plugin-java": "^1.6.2"
+  },
+  "devDependencies": {
+    "vscode-test": "^1.6.1"
   }
 }

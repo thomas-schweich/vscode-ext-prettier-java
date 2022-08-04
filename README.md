@@ -4,7 +4,23 @@ A VSCode extension enabling *fast* format-on-save for Java sources using `pretti
 
 ## Installation
 
-Install via the VS Code marketplace.
+This extension can be installed via the VS Code marketplace or by using one of the alternative methods below:
+
+*Alternative 1*
+
+Enter the following command after pressing `CTRL`+`P`:
+
+```
+ext install hyperproof.vscode-ext-prettier-java
+```
+
+*Alternative 2*
+
+Install using the `code` CLI as follows:
+
+```
+code --install-extension hyperproof.vscode-ext-prettier-java
+```
 
 ## Usage
 
@@ -39,7 +55,7 @@ Changes require restart to take effect.
 
 ## Acknowledgments
 
-This plugin is based on [`mwpb.java-prettier-formatter`](https://github.com/mwpb/java-prettier-formatter). We updated the underlying tools, updated all dependencies to their latest compatible versions, updated the VSCode plugin module, and converted the project to TypeScript. Big thanks to them and and the projects below!
+This plugin is based on [`mwpb.java-prettier-formatter`](https://github.com/mwpb/java-prettier-formatter). We updated the underlying tools, updated all dependencies to their latest compatible versions, updated the VSCode plugin module, and converted the project to TypeScript. Big thanks to them and the projects below!
 
 * [Prettier](https://prettier.io/) - Formatter.
 * [Prettier plugin Java](https://github.com/jhipster/prettier-java/tree/master/packages/prettier-plugin-java) - Java specific formatting.

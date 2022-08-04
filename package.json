@@ -1,9 +1,9 @@
 {
   "publisher": "hp",
   "name": "vscode-ext-prettier-java",
-  "displayName": "[Hyperproof] Prettier for Java",
+  "displayName": "Hyperproof Java Formatting for VSCode",
   "description": "VSCode extension enabling fast format-on-save for Java sources using prettier-plugin-java.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "engines": {
     "vscode": "^1.45.0"
   },
@@ -41,7 +41,8 @@
   "scripts": {
     "lint": "eslint . --ext .ts,.tsx",
     "vscode:prepublish": "npm run compile",
-    "compile": "tsc -p ./"
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
   },
   "dependencies": {
     "lodash": ">=4.17.19",
